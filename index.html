@@ -2,144 +2,132 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sport Clothes Store</title>
-    <link rel="shortcut icon" href="div1_images/favicon.png" type="image/x-icon">
-    <style>
-        header {
-            background-image: url(div1_images/background_header.jpg)
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sport Clothes Store</title>
+  <link rel="shortcut icon" href="./img/icon/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
-    <header class="header">
-        <div class="header__upperline">
-            <span class="header__upperline-text">We've extended our returns period to 30 days.</span>
-            <!--ask if could use span tag here instead of p tag-->
-            <a href="mailto:workout@email.com">workout@email.com</a>
-            <a href="tel:+12345678900">+1 (234) 567 89 00</a>
+
+  <header class="header" id="header">
+
+    <div class="header__upperline">
+      <div class="header__container">
+        <div class="header__upperline-inner">
+          <span class="header__upperline-text">We've extended our returns period to 30 days.</span>
+          <div class="header__upperline-clock"></div>
+          <div class="header__upperline-contacts">
+            <a class="header__upperline-contacts-link" href="mailto:workout@email.com">workout@email.com</a>
+            <a class="header__upperline-contacts-link" href="tel:+12345678900">+1 (234) 567 89 00</a>
+          </div>
         </div>
-        <nav class="header__nav">
+      </div>
+    </div>
+
+    <div class="banner-bg">
+
+      <nav class="header__nav">
+        <div class="header__container">
+          <div class="header__nav-container">
             <div class="header__logo-container">
-                <img width=168 src="div1_images/logo.svg" alt="name-of-store">
-                <!--logo image-->
+              <img src="img/icon/logo-icon.svg" alt="logo" id="logo">
+
+              <div class="navigation-burger">
+                <span></span>
+              </div>
             </div>
 
-            <ul class="header__menu">
-                <li class="header__menu-item"><a href="#about">About us.</a></li>
-                <li class="header__menu-item"><a href="#sale">Sale.</a></li>
-                <li class="header__menu-item"><a href="#collection">Collections.</a></li>
-                <li class="header__menu-item"><a href="#blog">Blog.</a></li>
-                <li class="header__menu-item"><a href="#contact-us">Contact us.</a></li>
-            </ul>
-            <!--add social meadia icons and links to them-->
-            <div class="header__social-icons">
+            <div class="navigation-wrapper">
+              <ul class="header__menu">
+                <li class="header__menu-item">
+                  <a class="header__menu-link" href="#about">About us.</a>
+                </li>
+                <li class="header__menu-item">
+                  <a class="header__menu-link" href="#sale">Sale.</a>
+                </li>
+                <li class="header__menu-item">
+                  <a class="header__menu-link" href="#collection">Collections.</a>
+                </li>
+                <li class="header__menu-item">
+                  <a class="header__menu-link navigation__link" href="#blog">Blog.</a>
+                </li>
+                <li class="header__menu-item">
+                  <a class="header__menu-link" href="#contact-us">Contact us.</a>
+                </li>
+              </ul>
+              <div class="header__social-icons">
                 <ul class="header__social-icons-list">
-                    <li><a href="https://www.facebook.com/"><img src="div1_images/facebook-icon.svg" alt="Facebook icon"></a>
-                    </li>
-                    <li><a href="https://www.instagram.com/"><img src="div1_images/instagram-icon.svg" alt="Instagram icon"></a>
-                    </li>
-                    <li><a href="https://www.youtube.com/"><img src="div1_images/youtube-icon.svg" alt="Youtube icon"></a></li>
+                  <li>
+                    <a href="https://www.facebook.com/"><img class="header__social-icons-img"
+                        src="img/icon/facebook-icon.svg" alt="Facebook icon"></a>
+                  </li>
+                  <li>
+                    <a href="https://www.instagram.com/"><img class="header__social-icons-img"
+                        src="img/icon/instagram-icon.svg" alt="Instagram icon"></a>
+                  </li>
+                  <li>
+                    <a href="https://www.youtube.com/"><img class="header__social-icons-img"
+                        src="img/icon/youtube-icon.svg" alt="Youtube icon"></a>
+                  </li>
                 </ul>
+              </div>
             </div>
-        </nav>
+          </div>
+        </div>
+      </nav>
 
-        <div class="header__banner">
+
+      <section class="header__banner">
+        <div class="header__container">
+          <div class="header__banner-inner">
             <p class="header__subtitle">Aspire to move</p>
-            <h1 class="header__title">New collections by top brands.</h1>
+            <h1 class="header__title">
+              New <span class="header__title_collections"> collections </span> by
+              top brands <span class="header__title_dot">.</span>
+            </h1>
+          </div>
+          <div class="header__banner-btn">
+            <a href="#collection">Shop now <span class="header__banner-arrow"> → </span></a>
+          </div>
         </div>
-        <div>
-            <a href="#main-collections">Shop now <span> → </span></a> <!--clarify about the span and arrow-->
-        </div>
-        <div class="header__button">
-            <a href=""></a>
-        </div>
-    </header>
-    <main class="main">
-        <div class="promo">
-            <div class="promo__arrivals">
-                <p class="promo__arrivals-title">
-                    NEW ARRIVALS.
-                </p>
-                <a href="#arrivals" class="promo__arrivals-link button">Shop now</a>
-            </div>
-            <div class="promo__trainers"></div>
-            <div class="promo__sale"></div>
-        </div>
-        <section class="shipping">
-            <h2 class="shipping__title">
-                Why Choose Us.
-            </h2>
-            <p class="shipping__subtitle">
-                Keep fit, follow a healthy lifestyle with us!
-            </p>
-            <!--add shipping options-->
-            <div class="shipping__cards">
-                <article class="shipping__cards-item">
-                    <img src="div1_images/delivery-bus.jpg" alt="Delivery bus" class="shipping__cards-item-image">
-                    <h3>Free Shipping Over $90</h3>
-                    <p>Get advantage of our free worldwide shipping on all orders over $90.</p>
-                </article>
-                <article class="shipping__cards-item">
-                    <img src="div1_images/delivery-box.jpg" alt="Delivery box" class="shipping__cards-item-image">
-                    <h3>Easy 30-Day Return</h3>
-                    <p>If the item does not suit you, please send it back to us within 30 days.</p>
-                </article>
-                <article class="shipping__cards-item">
-                    <img src="img/delivery-box.jpg" alt="Delivery box" class="shipping__cards-item-image">
-                    <h3>Eco materials</h3>
-                    <p>All items are made with at least 30% recycled materials and zero virgin polyester.</p>
-                </article>
-                <article class="shipping__cards-item">
-                    <img src="img/delivery-box.jpg" alt="Delivery box" class="shipping__cards-item-image">
-                    <h3>20 PAYMENT METHODS</h3>
-                    <p>Pay for your orders with credit cards, PayPal, AliPay, and other payment methods.</p>
-                </article>
+      </section>
 
-            </div>
+    </div>
+  </header>
 
+  <main class="main">
+    <div class="categories">
 
+      <div class="categories-arrivals block">
+        <p class="categories-title">
+          NEW ARRIVALS <span class="dot">.</span>
+        </p>
 
-        </section>
-        <!--delete, example-->
-        <section class="contacts">
-            <div class="contacts__address">
-                <h2>Contacts</h2>
-                <div>
-                    <h3>Address</h3>
-                    <p>1414, Main Sreet, NY, USA</p>
-                </div>
-                <div>
-                    <h3>Hours</h3>
-                    <p>Monday-Saturday:11 AM- 9 PM</p>
-                </div>
-                <div>
-                    <h3>Contacts</h3>
-                    <p></p>
-                </div>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20589.053692227502!2d23.949010899999998!3d49.8305868!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473ae76550f84ebb%3A0x89b7cbc0312afb49!2z0JHRg9C00LjQvdC-0Log0LzQtdCx0LvRltCy!5e0!3m2!1suk!2sua!4v1664990601097!5m2!1suk!2sua"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
+        <div class="categories-divider"></div>
 
-            </div>
-            <form class="contacts__form">
-                <h2>Send a request</h2>
-                <input type="text" placeholder="Your name" required name="client-name">
-                <input type="email" placeholder="Type your email" required name="email">
-                <input type="text" placeholder="Type your emessage" name="message">
-                <input type="submit" value="Send">
-            </form>
-        </section>
+        <a href="#collection" class="categories-arrivals-link categories-btn">Shop Collection<span
+            class="categories-arrow">→</span></a>
+      </div>
 
-    </main>
-    <footer>
+      <div class="categories-trainers block">
+        <p class="categories-title">
+          TRAINERS <span class="dot">.</span>
+        </p>
+        <div class="categories-divider"></div>
+        <a href="#collection" class="categories-trainers-link categories-btn">Shop Collection<span
+            class="categories-arrow">→</span></a>
+      </div>
 
-    </footer>
-</body>
-
-</html>
+      <div class="categories-sale block">
+        <p class="categories-title">HOT SALE <span class="dot">.</span></p>
+        <div class="categories-divider"></div>
+        <a href="#sale" class="categories-sale-link categories-btn">Shop Collection<span class="categories-arrow">→</span></a>
+      </div>
+    </div>
+      
+   </body>
+ </html>
+   
