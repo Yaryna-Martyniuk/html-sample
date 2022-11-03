@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
 .header__banner {
     padding-top: 110px;
     padding-bottom: 110px;
@@ -99,3 +101,6 @@
     font-size: 1.2rem;
     transition: font-size .3s ease-in-out;
 }
+
+
+
