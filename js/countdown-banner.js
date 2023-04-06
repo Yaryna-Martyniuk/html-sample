@@ -1,5 +1,5 @@
 (function () {
-    const countDownDate = new Date("Nov 23, 2022 00:00:00").getTime();
+    const countDownDate = new Date("May 23, 2023 00:00:00").getTime();
     const contactUsCaption = document.querySelector(".categories-title");
     contactUsCaption.innerText = "NEW ARRIVALS"
 
